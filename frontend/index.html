@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Journal</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- Auth view: shown until a token is in sessionStorage -->
+<section id="auth-view">
+  <h1>AI Journal</h1>
+  <form id="auth-form">
+    <input id="email" type="email" placeholder="email" autocomplete="username" required>
+    <input id="password" type="password" placeholder="password (min 6 chars)" autocomplete="current-password" required minlength="6">
+    <div class="row">
+      <button type="submit" value="login">Log in</button>
+      <button type="submit" value="signup" formnovalidate>Sign up</button>
+    </div>
+  </form>
+  <p id="auth-msg" class="msg"></p>
+</section>
+
+<!-- App view -->
+<section id="app-view" hidden>
+  <header>
+    <h1>AI Journal</h1>
+    <span id="who"></span>
+    <button id="logout">Log out</button>
+  </header>
+
+  <div class="columns">
+    <div class="panel">
+      <h2>New entry</h2>
+      <form id="entry-form">
+        <input id="entry-date" type="date" required>
+        <textarea id="entry-content" rows="6" placeholder="What happened today?" required></textarea>
+        <div class="row">
+          <button type="submit">Save entry</button>
+          <button type="button" id="cancel-edit" hidden>Cancel edit</button>
+        </div>
+      </form>
+      <p id="entry-msg" class="msg"></p>
+
+      <h2>Your entries</h2>
+      <ul id="entries"></ul>
+    </div>
+
+    <div class="panel">
+      <h2>Ask your journal</h2>
+      <div id="messages"></div>
+      <form id="chat-form">
+        <input id="question" placeholder="What did I eat for breakfast on Tuesday?" required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="/app.js"></script>
+</body>
+</html>

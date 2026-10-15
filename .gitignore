@@ -1,0 +1,22 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# fastembed model cache / editor / OS
+.fastembed_cache/
+.vscode/
+.idea/
+.DS_Store
+
+# Local tooling / logs
+.claude/
+node_modules/
+*.log
+venv/
