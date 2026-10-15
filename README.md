@@ -9,7 +9,7 @@ layer, a hand-written RAG pipeline (no LangChain), and three independent layers 
 
 ## Demo video
 
-▶️ **[Watch the 1–3 minute demo](DEMO_VIDEO_LINK_HERE)** — login, adding a note, asking about it, and the
+▶️ **[Watch the 1–3 minute demo](https://drive.google.com/file/d/1tKRFaF9996_YmK3BiWeza5P4jMuh79B7/view?usp=sharing)** — login, adding a note, asking about it, and the
 backend terminal showing `[INGEST]` and `[RAG]` retrieval logs.
 
 ## Architecture
